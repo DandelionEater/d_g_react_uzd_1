@@ -29,8 +29,8 @@ export default function TodoList() {
   };
 
   return (
-    <div className="w-full p-4">
-      <h1 className="text-xl font-bold mb-4">Užduočių sąrašas</h1>
+    <div className="w-full p-6">
+      <h1 className="font-bold mb-4 text-md">Užduočių sąrašas</h1>
       <div className="flex gap-2 mb-4">
         <Input
           value={taskText}
@@ -38,8 +38,7 @@ export default function TodoList() {
           placeholder="Įveskite užduotį..."
         />
         <Button 
-        onClick={addTask} 
-        className="w-full md:w-auto"
+        onClick={addTask}
         >
           Pridėti
         </Button>
